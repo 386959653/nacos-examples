@@ -10,8 +10,8 @@
     </parent>
 
     <properties>
-        <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
-        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <spring-boot.version>2.6.2</spring-boot.version>
+        <spring-cloud.version>2021.0.0</spring-cloud.version>
 
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -27,7 +27,17 @@
         <module>nacos-spring-cloud-config-multi-data-ids-example</module>
         <module>nacos-spring-cloud-discovery-example</module>
     </modules>
-
+    <repositories>
+        <repository>
+            <id>nexus-aliyun</id>
+            <name>Nexus aliyun</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </repository>
+        <repository>
+            <id>central</id>
+            <url>https://repo1.maven.org/maven2/</url>
+        </repository>
+    </repositories>
     <dependencyManagement>
         <dependencies>
             <dependency>
